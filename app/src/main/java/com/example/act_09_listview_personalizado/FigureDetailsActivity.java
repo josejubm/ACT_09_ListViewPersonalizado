@@ -15,6 +15,7 @@ public class FigureDetailsActivity extends AppCompatActivity {
     private EditText editTextThirdSide; // Nuevo EditText para el tercer lado
     private Button buttonCalcular;
     private TextView textResultado;
+    private TextView textTituloFigura;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class FigureDetailsActivity extends AppCompatActivity {
         editTextThirdSide = findViewById(R.id.editTextThirdSide);
         buttonCalcular = findViewById(R.id.buttonCalcular);
         textResultado = findViewById(R.id.textResultado);
+        textTituloFigura = findViewById(R.id.textTituloFigura);
 
         String figuraSeleccionada = getIntent().getStringExtra("selectedFigureName");
         setTitle("Detalles de " + figuraSeleccionada);
@@ -36,6 +38,9 @@ public class FigureDetailsActivity extends AppCompatActivity {
                 calcularResultado(figuraSeleccionada);
             }
         });
+
+        // Establece el título de la figura
+        textTituloFigura.setText("Detalles de " + figuraSeleccionada);
     }
 
     private void calcularResultado(String figuraSeleccionada) {

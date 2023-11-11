@@ -4,10 +4,21 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
+    <!-- TextView para el título de la figura -->
+    <TextView
+        android:id="@+id/textTituloFigura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalles de la Figura"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
     <EditText
         android:id="@+id/editTextLado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textTituloFigura"
+        android:layout_marginTop="16dp"
         android:hint="Ingrese el lado"
         android:inputType="numberDecimal"/>
 

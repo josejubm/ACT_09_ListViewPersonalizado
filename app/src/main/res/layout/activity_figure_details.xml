@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextLado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el lado"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLado"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese la altura"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <!-- Nuevo EditText para el tercer lado del Triángulo Escaleno -->
+    <EditText
+        android:id="@+id/editTextThirdSide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAltura"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese el tercer lado"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextThirdSide"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalcular"
+        android:layout_marginTop="16dp"
+        android:text="Resultado: "
+        android:textSize="18sp"/>
+</RelativeLayout>

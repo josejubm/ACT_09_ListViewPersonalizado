@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operaciones Geométricas"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <!-- ListView Personalizado -->
+    <ListView
+        android:id="@+id/listViewFigures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewHeader"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="16dp"/>
+
+</RelativeLayout>

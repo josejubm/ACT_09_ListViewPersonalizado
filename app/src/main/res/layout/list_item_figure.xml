@@ -1,0 +1,52 @@
+<!-- res/layout/list_item_figure.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageFigure"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/textFigureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Figura"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/imageFigure"/>
+
+    <TextView
+        android:id="@+id/textPerimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perímetro: "
+        android:textSize="14sp"
+        android:layout_below="@id/textFigureName"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/imageFigure"/>
+
+    <TextView
+        android:id="@+id/textArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área: "
+        android:textSize="14sp"
+        android:layout_below="@id/textPerimeter"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/imageFigure"/>
+
+    <TextView
+        android:id="@+id/textVolume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Volumen: "
+    android:textSize="14sp"
+    android:layout_below="@id/textArea"
+    android:layout_marginTop="4dp"
+    android:layout_toRightOf="@id/imageFigure"/>
+
+</RelativeLayout>
